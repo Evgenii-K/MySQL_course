@@ -1,0 +1,10 @@
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('1', '11', '1');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('2', '21', '2');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('3', '13', '3');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('4', '4', '4');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('5', '51', '5');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('6', '1', '6');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('7', '12', '7');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('8', '14', '8');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('9', '5', '9');
+INSERT INTO `likes` (`id`, `user_id`, `media_id`) VALUES ('10', '16', '10');

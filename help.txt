@@ -1,0 +1,8 @@
+PRIMARY KEY - создаёт кластеризованный индекс
+UNIQUE - не кластеризованный индекс
+
+https://t.me/joinchat/KlVLcFi3lEKSCWDD1em1eQ
+
+warkbench - для работы только с sql
+
+DBeaver (основной у препода) - позволяет работать с разными СБД

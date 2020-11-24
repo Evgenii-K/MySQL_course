@@ -1,0 +1,10 @@
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('1', '5', '11');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('2', '2', '2');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('3', '3', '31');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('4', '4', '5');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('5', '3', '15');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('6', '6', '23');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('7', '7', '25');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('8', '8', '28');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('9', '9', '35');
+INSERT INTO `views` (`count_id`, `media_id`, `view_user_id`) VALUES ('10', '8', '16');

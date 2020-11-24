@@ -1,0 +1,10 @@
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('1', 'harum', '1');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('2', 'excepturi', '12');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('3', 'praesentium', '3');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('4', 'amet', '14');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('5', 'necessitatibus', '5');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('6', 'praesentium', '16');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('7', 'vel', '7');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('8', 'consectetur', '18');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('9', 'consequatur', '9');
+INSERT INTO `communities` (`id`, `name`, `admin_user_id`) VALUES ('10', 'quaerat', '12');
