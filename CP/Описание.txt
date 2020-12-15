@@ -1,0 +1,122 @@
+	1 ОСНОВНАЯ
+название
+перевод названия
+год производства
+страна - (фильм - страна) - страна
+жанр - (фильм - жанр) - жанр
+режисер - имена
+продюссер - (фильм - продюсер) - имена
+оператор - имена
+в ролял (фильм - артист) - имена
+бютжет
+сборы
+премьера
+продолжительность
+описание - профайл фильм
+
+
+	+3 СТРАНА
+Страна
+
+	+5 ЖАНР
+Жанр
+	6 ФИЛЬМ-ЖАНР
+Фильм-Жанр
+	7 Имена
+Имя
+Фамилия
+Карьера - (Имя - Должность) Должность
+Дата рождения
+Место рождения - (Артист - страна, город) ?
+Жанры - (Артист - Жанр)
+Супруга - Имена
+Снался в фильмах (колличество)
+Биография
+Фото	
+	+9 ФИЛЬМ-АРТИС
+Фильм-Имена
+	10 АРТИСТ-ЖАНР
+Имя-Жанр
+	11 ДОЛЖНОСТЬ
+actor
+director
+Screenwriter
+Producer
+Operator
+Composer
+
+
++ Актёрско - режисёрский состав
++ В каких фильмах снимался актёр
+
+Представления
+
++ Рекомендованные фильмы для пользователя
+- рейтинге фильмов на основе лайков
++ новинки
+
+USE `kinopoisk`;
+DROP procedure IF EXISTS `recommendation`;
+
+DELIMITER $$
+USE `kinopoisk`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `recommendation`(IN nam BIGINT)
+BEGIN
+SELECT 
+	films.id,
+	films.originalname AS 'Фильм',
+    films.yearcreated AS 'Год',
+    ganre.ganre_name AS 'Жанр'
+FROM 
+	films
+JOIN 
+	ganre ON films.ganre = ganre.id
+JOIN 
+	likes ON films.id = likes.film_id
+WHERE
+	films .ganre = (SELECT 
+		films.ganre
+	 FROM 
+		films
+	 JOIN 
+		likes ON films.id = likes.film_id
+	 WHERE
+		likes.user_id = nam
+	 GROUP BY 
+		films.ganre
+	 ORDER BY 
+		films.ganre DESC
+	 LIMIT 1);
+END$$
+
+DELIMITER ;
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `recommendation`(IN nam BIGINT)
+BEGIN
+SELECT 
+	films.id,
+	films.originalname AS 'Фильм',
+    films.yearcreated AS 'Год',
+    ganre.ganre_name AS 'Жанр'
+FROM 
+	films
+JOIN 
+	ganre ON films.ganre = ganre.id
+JOIN 
+	likes ON films.id = likes.film_id
+WHERE
+	films .ganre = (SELECT 
+		films.ganre
+	 FROM 
+		films
+	 JOIN 
+		likes ON films.id = likes.film_id
+	 WHERE
+		likes.user_id = nam
+	 GROUP BY 
+		films.ganre
+	 ORDER BY 
+		films.ganre DESC
+	 LIMIT 1);
+END
+
